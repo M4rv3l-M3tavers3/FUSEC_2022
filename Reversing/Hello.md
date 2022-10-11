@@ -36,6 +36,13 @@ Như thói quen thường dùng, mình `Shift + F12` để scan tất cả strin
 
 ### $Solution
 
+- Cách viết payloads này của mình hơi a đuồi vì khi copy data từ hex view giữa các bytes có khoảng trắng nên một là phải xóa đi để nhìn cho tiện, hoặc điều chỉnh tùy vào tools sử dụng để convert từ hex -> decimal. 
+
+![image](https://user-images.githubusercontent.com/93731698/195158091-be941e94-ad70-43c5-ae02-25babeb4dcee.png)
+
+
+- Sau đó trong vòng lặp while chúng ta đang brute-force các giá trị ascii của tất cả các kí tự và thỏa mãn tất cả các biểu thức trong code ban đầu để chúng bằng với giá trị hex của hàm v4 cần so sánh.
+
 ```python
 import string 
 ENCRYPT= [
@@ -53,4 +60,4 @@ print(flag)
 
 ```
 
-- Sau đó trong vòng lặp while chúng ta đang brute-force các giá trị ascii của tất cả các kí tự và thỏa mãn tất cả các biểu thức trong code ban đầu để chúng bằng với giá trị hex của hàm v4 cần so sánh.
+
