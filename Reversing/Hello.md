@@ -1,0 +1,1 @@
+- Challenge này có 1 file đính kèm là file thực thi.
